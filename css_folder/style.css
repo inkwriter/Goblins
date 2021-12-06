@@ -1,9 +1,22 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 body {
     background-color: black;
     font-family: 'Special Elite', cursive, Arial, Helvetica, sans-serif;
     color: white;
+    font-size: 16px;
+    flex-wrap: wrap;
 }
+
 
 h1 {
     font-family: 'Special Elite', cursive, Arial, Helvetica, sans-serif;
@@ -36,6 +49,54 @@ p {
 table, th, td {
     border: 1px solid white;
 
+}
+
+button#hamburgerBtn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.4rem;
+    cursor: pointer;
+    padding: 0 30px 0 2vw;
+}
+
+nav {
+    background-color: #ff2222;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    padding: .8rem 0;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li.active {
+    background-color: rgba( 0, 0, 0, .5);
+}
+
+nav a:hover {
+    background-color: rgba( 0, 0, 0, .2);
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul {
+    display: none;
 }
 
 /*---------------
@@ -143,3 +204,73 @@ The CSS Animation
 /*---------------
 End of CSS Animation
 -----------------*/
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: #aaa;
+    margin: 5px 10px;
+}
+
+.test {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.classList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rpgClass {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: center;
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        margin-left: 2vw;
+        display: block;
+    }
+        
+    nav li {
+        float:left;
+        width: auto;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    nav ul {
+        margin-left: 2vw;
+        }
+
+    nav li {
+        width: auto;
+        }
+
+    nav a {
+        padding: .7rem 1rem;
+    }
+ 
+
+    
+
+
+
+}
