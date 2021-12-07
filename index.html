@@ -1,33 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Goblins | Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link href="/css_folder/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
+
 <body>
-    <div>
-        <nav>
-            <ul>
+    <nav class="clearfix">
+        <div>
+            <button id="hamburgerBtn">&#9776;</button>
+            <ul id="primaryNav">
                 <li><a href="about.html">About</a></li>
-                <li><a href="index.html"> Home</a></li>
+                <li class="active"><a href="index.html"> Home</a></li>
             </ul>
-        </nav>
-    </div>
-    <h1>Goblins</h1>
-    <div class="wrapper">
-        <div class="flame-wrapper">
-            <div class="flame red"></div>
-            <div class="flame orange"></div>
-            <div class="flame gold"></div>
-            <div class="flame white"></div>
+        </div>
+    </nav>
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px">Goblins</h1>
         </div>
     </div>
-    <footer>
 
+
+
+    <main>
+        <div class="mainContent">
+            <section>
+                <p>You have been hired by the town to put a stop to the aggressive
+                    goblins that are camped in the forest. Night has fallen. How do you want to start your adventure?
+                </p>
+                <button class="choiceBtn" onclick="blacksmithFunction()">Go the blacksmith</button>
+                <button class="choiceBtn" onclick="forestLoseFunction()">Venture into the forest</button>
+            </section>
+            <div id="forestLose">
+                <p>You go to the forest. You smell smoke and see light in the distance. What do you do?</p>
+                <button class="choiceBtn" onclick="blacksmithFunction()">Go the blacksmith</button>
+                <button class="choiceBtn" onclick="myFunction()">Go checkout the light</button>
+            </div>
+            <br>
+            <div id="blacksmith">
+                You go to the blacksmith. He gives you a great sword. It should be more than enough to help you take care
+                of the goblins. Venture forward to the forest.
+                <button class="choiceBtn" onclick="myFunction()">Venture into the forest</button>
+            </div>
+
+
+
+
+            
+
+        </div>
+    </main>
+    <footer>
+        <!--CSS Animation-->
+
+        <div class="wrapper">
+            <div class="flame-wrapper">
+                <div class="flame red"></div>
+                <div class="flame orange"></div>
+                <div class="flame gold"></div>
+                <div class="flame white"></div>
+            </div>
+        </div>
     </footer>
+    <script src="/js_folder/main.js"></script>
 </body>
+
 </html>

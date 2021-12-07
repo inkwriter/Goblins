@@ -22,107 +22,119 @@
         </div>
     </nav>
 
-    <header>
-        <h1>About</h1>
-    </header>
-
-    <!--CSS Animation-->
-    <div class="wrapper">
-        <div class="flame-wrapper">
-            <div class="flame red"></div>
-            <div class="flame orange"></div>
-            <div class="flame gold"></div>
-            <div class="flame white"></div>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px">About</h1>
         </div>
     </div>
 
+
+
     <main>
-        <h2>Welcome!</h2>
-        <p>Goblins is a simple choose your own adventure game. You are an adventurer, hired to bring down a camp of
-            aggressive
-            goblins that are camped outide of town. Becareful though, as there may be traps and other surpirses along
-            the way!
-        </p>
-        <h3> Features Coming Soon!</h3>
-        <p>Here are a list of features we plan on implenting over the next couple of months. Including:</p>
-        <ul>
-            <li class="classList">Choosing a class:
+        <div class="mainContent">
+            <h2>Welcome!</h2>
+
+            <p>Goblins is a simple choose your own adventure game. You are an adventurer, hired to bring down a camp of
+                aggressive
+                goblins that are camped outide of town. Becareful though, as there may be traps and other surpirses
+                along
+                the way!
+            </p>
+            <h3> Features Coming Soon!</h3>
+            <p>Here are a list of features we plan on implenting over the next couple of months. Including:</p>
+            <div class="classList">
                 <ul>
-                    <li class="rpgClass">Warrior
-                        <div class="box">Picture of warrior</div>
+                    <li class="classList">Choosing a class:
+                        <ul>
+                            <li class="rpgClass">Warrior
+                                <div class="box">Picture of warrior</div>
+                            </li>
+                            <li class="rpgClass">Rogue
+                                <div class="box">Picture of Rogue</div>
+                            </li>
+                            <li class="rpgClass">Wizard
+                                <div class="box">Picture of Wizard</div>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="rpgClass">Rogue
-                        <div class="box">Picture of Rogue</div>
-                    </li>
-                    <li class="rpgClass">Wizard
-                        <div class="box">Picture of Wizard</div>
+                    <br>
+                    <li>Choosing a race:
+                        <ul>
+                            <li>Human</li>
+                            <li>Elf</li>
+                            <li>Dwarf</li>
+                        </ul>
                     </li>
                 </ul>
-            </li>
+            </div>
+            <h3>Weapons</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Damage</th>
+                </tr>
+                <tr>
+                    <td>Fist</td>
+                    <td>Melee</td>
+                    <td>1d2</td>
+                </tr>
+                <tr>
+                    <td>Great Sword</td>
+                    <td>Melee</td>
+                    <td>3d6</td>
+                </tr>
+                <tr>
+                    <td>Mace</td>
+                    <td>Melee</td>
+                    <td>1d6</td>
+                </tr>
+                <tr>
+                    <td>Short Bow</td>
+                    <td>Ranged</td>
+                    <td>1d6</td>
+                </tr>
+                <tr>
+                    <td>Sling</td>
+                    <td>Ranged</td>
+                    <td>1d4</td>
+                </tr>
+            </table>
+            <p>Click here to test how much damage the great sword could do.</p>
+            <button onclick="document.getElementById('demo').innerHTML = final()">Click Me</button>
+            <p id="demo"></p>
             <br>
-            <li>Choosing a race:
-                <ul>
-                    <li>Human</li>
-                    <li>Elf</li>
-                    <li>Dwarf</li>
-                </ul>
-            </li>
-        </ul>
-        <h3>Weapons</h3>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Damage</th>
-            </tr>
-            <tr>
-                <td>Fist</td>
-                <td>Melee</td>
-                <td>1d2</td>
-            </tr>
-            <tr>
-                <td>Great Sword</td>
-                <td>Melee</td>
-                <td>3d6</td>
-            </tr>
-            <tr>
-                <td>Mace</td>
-                <td>Melee</td>
-                <td>1d6</td>
-            </tr>
-            <tr>
-                <td>Short Bow</td>
-                <td>Ranged</td>
-                <td>1d6</td>
-            </tr>
-            <tr>
-                <td>Sling</td>
-                <td>Ranged</td>
-                <td>1d4</td>
-            </tr>
-        </table>
-        <p>A few other things to look forward to are: </p>
-        <ul>
-            <li>New enemies</li>
-            <li>Dice rolls opening up new scenarios</li>
-            <li>And a contact form for you to send suggestions in.</li>
-        </ul>
+            <p>A few other things to look forward to are: </p>
+            <ul>
+                <li>New enemies</li>
+                <li>Dice rolls opening up new scenarios</li>
+                <li>And a contact form for you to send suggestions in.</li>
+            </ul>
 
 
-        <div class="test">
-            <div class="box">1</div>
-            <div class="box">2</div>
-            <div class="box">3</div>
-            <div class="box">4</div>
-            <div class="box">5</div>
-            <div class="box">6</div>
-            <div class="box">7</div>
-        </div>
+            <div class="test">
+                <div class="box">1</div>
+                <div class="box">2</div>
+                <div class="box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="box">6</div>
+                <div class="box">7</div>
+            </div>
 
-
+        
+        
     </main>
     <footer>
-
+        <!--CSS Animation-->
+        <div class="wrapper">
+            <div class="flame-wrapper">
+                <div class="flame red"></div>
+                <div class="flame orange"></div>
+                <div class="flame gold"></div>
+                <div class="flame white"></div>
+            </div>
+    </div>
     </footer>
     <script src="/js_folder/main.js"></script>
 </body>
