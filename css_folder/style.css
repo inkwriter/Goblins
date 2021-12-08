@@ -67,11 +67,6 @@ h2 {
     font-size: 25px;
 }
 
-h3 {
-    font-family: 'Special Elite', cursive, Arial, Helvetica, sans-serif;
-    color: white;
-}
-
 p {
     font-family: 'Special Elite', cursive, Arial, Helvetica, sans-serif;
     color: white;
@@ -147,19 +142,27 @@ nav ul {
     flex-wrap: wrap;
 }
 
-.classList {
+.List {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    align-items: center;
+    width: 375;
 }
 
-.rpgClass {
+.rpgColumn {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 10px;
     margin-top: 10px;
     justify-content: center;
 
+}
+
+.Picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
 }
 
 #demo {
@@ -174,9 +177,23 @@ nav ul {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 25px 10px;
     padding: 5px;
     
+}
+
+footer {
+    display: flex;
+    border: 100px;
+}
+
+.Names {
+    font-size: 20px;
+}
+
+.description {
+    width: 250px;
 }
 
 /*---------------
@@ -287,13 +304,17 @@ End of CSS Animation
 -----------------*/
 
 button {
-    height: 44px;
+    height: 60px;
     width: 65px;
+    border-radius: 50%;
 }
 
 .choiceBtn {
+    display: flex;
+    align-items: center;
     width: 100px;
     margin: 25px;
+    border-radius: 50%;
 }
 
 div#blacksmith {
@@ -335,11 +356,6 @@ div#playerWinsCave {
     background-color: rgb(80, 155, 180);
 }
 
-footer {
-    display: flex;
-    border: 100px;
-}
-
 @media only screen and (min-width: 768px) {
 
     nav button {
@@ -363,6 +379,16 @@ footer {
     .hero-image {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img_folder/ForestMed.jpeg");
     }
+
+    .Direction {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .classMedium {
+        padding: 50px;
+    }
 }
 
 
@@ -384,8 +410,17 @@ footer {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img_folder/Forest.jpg");
     }
 
-    
+    .DirectionLarge {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }    
 
-
+    .Names {
+        padding: 50px;
+        font-size: 30px;
+    }
 
 }
