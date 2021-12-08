@@ -33,34 +33,67 @@
     <main>
         <div class="mainContent">
             <section>
-                <p>You have been hired by the town to put a stop to the aggressive
-                    goblins that are camped in the forest. Night has fallen. How do you want to start your adventure?
+                <p>Welcome, traveler, to the world of Goblins! The fame you have earned as an avid explorer and feared 
+                    combatant has landed you the task of eradicating an encampment of ruthless goblins that have established
+                     camp just outside of a gentle little town. The coin is plenty for this task, adventurer, but beware, 
+                     goblins are a nasty bunch known for not fighting fair. Stay on your guard for traps and surprises of all
+                    kinds. The only thing standing between you and a bag of gold is… GOBLINS. Night has fallen. How do you 
+                    want to start your adventure?
                 </p>
-                <button class="choiceBtn" onclick="blacksmithFunction()">Go the blacksmith</button>
+                <button class="choiceBtn" onclick="blacksmithFunction()">Go to the blacksmith</button>
                 <button class="choiceBtn" onclick="forestLoseFunction()">Venture into the forest</button>
             </section>
             <div id="forestLose">
                 <p>You go to the forest. You smell smoke and see light in the distance. What do you do?</p>
-                <button class="choiceBtn" onclick="blacksmithFunction()">Go the blacksmith</button>
-                <button class="choiceBtn" onclick="myFunction()">Go checkout the light</button>
+                <button class="choiceBtn" onclick="blacksmithFunction()">Go to the blacksmith</button>
+                <button class="choiceBtn" onclick="goblinsWinFunction()">Go checkout the light</button>
             </div>
-            <br>
             <div id="blacksmith">
-                You go to the blacksmith. He gives you a great sword. It should be more than enough to help you take care
-                of the goblins. Venture forward to the forest.
-                <button class="choiceBtn" onclick="myFunction()">Venture into the forest</button>
+                <p>You go to the blacksmith. He gives you a great sword. It should be more than enough to help you take
+                care of the goblins.</p>
+                <button class="choiceBtn" onclick="playerWinsFunction()">Venture into the forest</button>
             </div>
-
-
-
-
-            
-
+            <div id="goblinsWin">
+                <p>You step out of the darkness to a small camp of goblins. You are able to defeat one or two with your bare 
+                    hands, but the remaining overpower you. If only you had a weapon.
+                </p>
+            </div>
+            <div id="playerWins">
+                <p>You smell smoke and see a light in the distane. You brace your sword for combat and walk toward it with stealth.
+                    When you step out of the darkness several goblins attack you, but are no match for your sword. With that bunch
+                    of goblins defeated, you wonder if there could be more. There is a cave next to within the reach of the light of
+                    the fire, or you can trek deeper into the forest. 
+                </p>
+                <button class="choiceBtn" onclick="intoTheWoodsFunction()">Trek deeper into the forest</button>
+                <button class="choiceBtn" onclick="intoCaveFunction()">Walk into the cave</button>
+            </div>
+            <div id="intoTheWoods">
+                <p>You go as deep as you can into the forest until there is nothing but darkness. It wouldn't be pointless to go any
+                    further.
+                </p>
+                <button class="choiceBtn" onclick="intoCaveFunction()">Walk into the cave</button>
+            </div>
+            <div id="intoCave">
+                <p>You walk into the cave. It is still dimly lit from the fire, but there is a light up a head. What do you do?</p>
+                <button class="choiceBtn" onclick="lookAroundFunction()">Pause and look around</button>
+                <button class="choiceBtn" onclick="playerDiesCaveFunction()">Walk deeper into the cave</button>
+            </div>
+            <div id="lookAround">
+                <p>It is a good thing you looked around. You spot a trap that would have crushed you with a giant boulder. You can now
+                    go around the trap.
+                </p>
+                <button class="choiceBtn" onclick="playerWinsCaveFunction()">Walk deeper into the cave</button>
+            </div>
+            <div id="playerDiesCave">
+                <p>You stepped too soon and are crushed by a giant boulder.</p>
+            </div>
+            <div id="playerWinsCave">
+                <p>You step deeper into the cave. You have find a treasure chest full of gold. You have beat the game.</p>
+            </div>
         </div>
     </main>
     <footer>
         <!--CSS Animation-->
-
         <div class="wrapper">
             <div class="flame-wrapper">
                 <div class="flame red"></div>
@@ -72,5 +105,4 @@
     </footer>
     <script src="/js_folder/main.js"></script>
 </body>
-
 </html>

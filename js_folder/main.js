@@ -37,3 +37,77 @@ function final(){
       x.style.display = "none";
     }
   }
+
+  function goblinsWinFunction() {
+    var x = document.getElementById("goblinsWin");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function playerWinsFunction() {
+    var x = document.getElementById("playerWins");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function intoTheWoodsFunction() {
+    var x = document.getElementById("intoTheWoods");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function intoCaveFunction() {
+    var x = document.getElementById("intoCave");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function lookAroundFunction() {
+    var x = document.getElementById("lookAround");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function playerDiesCaveFunction() {
+    var x = document.getElementById("playerDiesCave");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function lookAroundFunction() {
+    var x = document.getElementById("lookAround");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+  function playerWinsCaveFunction() {
+    var x = document.getElementById("playerWinsCave");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+
